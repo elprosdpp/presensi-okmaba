@@ -163,7 +163,7 @@
         <!-- <button class="show-modal">Show Bottom Sheet</button> -->
         <div class="bottom-sheet show">
           <div class="sheet-overlay" id="sheetOpen"></div>
-          <div class="content">
+          <div class="content o">
             <div class="header">
               <div
                 class="drag-icon"
@@ -354,6 +354,7 @@
                       class="block p-4 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-indigo-500"
                       placeholder="NIK KTP Mahasiswa"
                     />
+                    <div id="instance"></div>
                     <svg
                       class="w-6 h-6 absolute bottom-1/4 right-3 mr-3 stroke-indigo-700"
                       fill="none"
@@ -597,6 +598,7 @@
         ];
         $("#tags").autocomplete({
           source: availableTags,
+          appendTo: "#instance",
         });
       });
 
